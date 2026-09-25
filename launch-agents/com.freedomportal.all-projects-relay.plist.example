@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.freedomportal.all-projects-relay</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/node</string>
+    <string>REPLACE_WITH_REPO_PATH/freedom-installs-export-server.mjs</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>REPLACE_WITH_REPO_PATH</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>FREEDOM_EXPORT_MODE</key>
+    <string>all-projects</string>
+    <key>INSTALLS_RELAY_PORT</key>
+    <string>8775</string>
+    <key>INSTALLS_DETAIL_BATCH</key>
+    <string>16</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ThrottleInterval</key>
+  <integer>5</integer>
+  <key>StandardOutPath</key>
+  <string>/tmp/freedom-all-projects-relay.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/freedom-all-projects-relay.log</string>
+</dict>
+</plist>

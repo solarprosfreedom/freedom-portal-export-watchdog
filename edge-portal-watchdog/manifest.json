@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Freedom Portal Backfill Watchdog",
+  "version": "1.5.2",
+  "description": "Keeps the local unfiltered all-projects export running after a Portal tab crash.",
+  "permissions": ["alarms", "scripting", "storage", "tabs"],
+  "host_permissions": ["https://portal.freedomforever.com/*"],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Portal backfill watchdog"
+  }
+}

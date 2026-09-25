@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+*.log
+*.tmp
+
+# Local secrets and live progress (too large for GitHub)
+outputs/**/.relay-token
+outputs/**/*.csv
+outputs/**/*.json
+!outputs/**/.gitkeep
